@@ -1,0 +1,49 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "steamj-taro",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "任务中心",
+          "pathName": "pages/taskCenter/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "邀请进入云挂卡",
+          "pathName": "pages/home/index",
+          "query": "from=invite&invite_code=f1111",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "服务器状态",
+          "pathName": "pages/home/index",
+          "query": "tab=3",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "快捷操作",
+          "pathName": "pages/home/index",
+          "query": "tab=2",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "兑换中心",
+          "pathName": "pages/exchangeCenter/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

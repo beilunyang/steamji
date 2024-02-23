@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vips",
+  "info": {
+    "singularName": "vip",
+    "pluralName": "vips",
+    "displayName": "vip"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "coin": {
+      "type": "integer"
+    },
+    "day": {
+      "type": "integer"
+    }
+  }
+}

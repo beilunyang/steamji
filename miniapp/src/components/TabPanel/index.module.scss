@@ -1,0 +1,239 @@
+.container {
+  padding: 28px 28px;
+}
+.tabs {
+  :global {
+    .at-tabs__item--active {
+      color: #6190E8;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+    .at-tabs__header {
+      padding: 12px 10px;
+      background-color: #f3f3f3;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 32px;
+    }
+    .at-tabs__item {
+      padding: 12px;
+    }
+    .at-tabs__underline {
+      height: 0 !important;
+    }
+    .at-tabs__item-underline {
+      height: 0;
+    }
+  }
+}
+.panel {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  padding: 40px 48px;
+  color: #333;
+  font-size: 28px;
+}
+.operationPanel {
+  .runStatusRow {
+    padding: 0 40px;
+  }
+}
+.gridPanel {
+  @extend .panel;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+  padding: 0 4px;
+}
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  border-width: 0;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+  &:nth-child(3n) {
+    border-right-width: 0;
+  }
+  &.disabled {
+    color: #ccc;
+  }
+}
+.gridItemIcon {
+  height: 48px;
+  width: 48px;
+  margin-bottom: 8px;
+}
+.formItem {
+  padding-bottom: 28px;
+}
+.formInput {
+  margin-top: 20px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid rgba($color: #bdbdbd, $alpha: 0.2);
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.container {
+  .formAtInput {
+    :global(.at-input__input){
+      font-size: 28px;
+    }
+    @extend .formInput;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+.runStatusRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.farmRow {
+  display: flex;
+  flex-direction: row;
+  margin: 24px 0;
+}
+.farmVal {
+  margin-left: 24px;
+  font-size: 32px;
+  color: var(--bot-status-color);
+}
+.farmTitle {
+  background: #bdbdbd;
+  border-radius: 34px;
+  color: #fff;
+  padding: 6px 0;
+  margin: 36px 0;
+  font-size: 28px;
+  text-align: center;
+}
+.farmGames {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+}
+.farmGame {
+  flex: none;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 120px;
+  width: 300px;
+}
+.farmGameCover {
+  height: 120px;
+  width: 300px;
+  filter: blur(1px) brightness(0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.farmGameName {
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 8px;
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+}
+.runStatusTitle {
+  background-color: #bdbdbd;
+  color: #fff;
+  border-radius: 40px;
+  padding: 6px 0;
+  text-align: center;
+  font-size: 28px;
+  margin: 40px 0;
+}
+.runStatusText {
+  font-size: 28px;
+  color: #333;
+  padding-right: 20px;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+.refreshIcon {
+  width: 36px;
+  height: 36px;
+  &.rotate {
+    animation: spin 1.5s linear;
+  }
+}
+@mixin label {
+  font-size: 28px;
+  padding: 2px 16px;
+  color: #fff;
+}
+.labelSuccess {
+  @include label;
+  background-color: var(--bot-status-color);
+  border-radius: 40px;
+}
+.flag {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #10de62;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+.panelTitle {
+  color: #000;
+}
+.serverLog {
+  background: #0b0c1f;
+  border-radius: 8px;
+  padding: 16px 12px;
+  box-sizing: border-box;
+  color: #cacae1;
+  margin-top: 20px;
+}
+.emptyLog {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  font-size: 32px;
+}
+.logItem {
+  padding: 8px;
+  color: #fff;
+}
+.logType {
+  margin: 0 8px;
+}
+.logTime {
+  color: #777777;
+}
+.logLabel {
+  margin-right: 8px;
+  color: #777777;
+}
+.panelSubTitle {
+  font-size: 24px;
+  color: #777777;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}

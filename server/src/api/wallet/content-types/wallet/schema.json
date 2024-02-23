@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wallets",
+  "info": {
+    "singularName": "wallet",
+    "pluralName": "wallets",
+    "displayName": "wallet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "coin": {
+      "type": "integer",
+      "default": 0
+    },
+    "vip_expiration": {
+      "type": "datetime",
+      "default": "2010-08-31T16:00:00.000Z"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "wallet"
+    }
+  }
+}

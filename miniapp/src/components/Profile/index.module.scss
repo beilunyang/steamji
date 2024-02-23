@@ -1,0 +1,66 @@
+.linkColor {
+  color: #6190E8;
+  font-size: 32px;
+}
+.logo {
+  width: 120px;
+  height: 120px;
+  background-color: #f3f3f3;
+  border-radius: 16px;
+}
+.profile {
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  :global {
+    .at-input__input {
+      font-size: 28px;
+    }
+  }
+}
+.profileMain {
+  display: flex;
+  flex-direction: row;
+}
+.profileInfo {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  background-color: transparent !important;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+.profileName {
+  font-size: 32px;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.vipIcon {
+  margin-left: 8px;
+  width: 28px;
+  height: 28px;
+}
+.profileVipTime {
+  font-size: 28px;
+  color: #999;
+}
+.profileCoin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+  color: #000;
+}
+.profileUnit {
+  padding-top: 8px;
+  color: #999;
+}

@@ -1,0 +1,13 @@
+@import "taro-ui/dist/style/components/input.scss";
+@import "taro-ui/dist/style/components/icon.scss";
+@import "taro-ui/dist/style/components/modal.scss";
+@import "taro-ui/dist/style/components/button.scss";
+@import "taro-ui/dist/style/components/message.scss";
+@import "taro-ui/dist/style/components/tabs.scss";
+@import "taro-ui/dist/style/components/toast.scss";
+@import "taro-ui/dist/style/components/noticebar.scss";
+
+.at-button--primary {
+  border-color: #000;
+  background-color: #000;
+}

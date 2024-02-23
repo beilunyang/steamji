@@ -1,0 +1,25 @@
+{
+  "name": "strapi-auth",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "strapi-auth",
+    "description": "Description of Strapi Auth plugin",
+    "kind": "plugin",
+    "displayName": "Strapi Auth"
+  },
+  "dependencies": {},
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "maintainers": [
+    {
+      "name": "A Strapi developer"
+    }
+  ],
+  "engines": {
+    "node": ">=14.19.1 <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

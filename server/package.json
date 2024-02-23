@@ -1,0 +1,39 @@
+{
+  "name": "steamj",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-documentation": "^4.3.8",
+    "@strapi/plugin-i18n": "4.3.8",
+    "@strapi/plugin-users-permissions": "4.3.8",
+    "@strapi/strapi": "4.3.8",
+    "@strapi/utils": "^4.3.8",
+    "axios": "^0.27.2",
+    "better-sqlite3": "7.4.6",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.5",
+    "lodash": "^4.17.21",
+    "pg": "^8.8.0",
+    "pg-connection-string": "^2.5.0",
+    "ws": "^8.9.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "dab5cbdd-b283-4472-bc45-400162b1892e"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

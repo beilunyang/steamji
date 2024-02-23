@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "steamj-taro",
+  "description": "",
+  "appid": "1108100302",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}

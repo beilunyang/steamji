@@ -1,0 +1,18 @@
+.msgHint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.msgText {
+  color: #333;
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 24px;
+}
+.btn {
+  padding: 0 48px;
+  border-radius: 60px;
+}

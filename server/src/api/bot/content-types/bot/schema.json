@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bots",
+  "info": {
+    "singularName": "bot",
+    "pluralName": "bots",
+    "displayName": "bot",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "server": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::server.server",
+      "private": true
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "bot"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sign": {
+      "type": "string"
+    },
+    "online_status": {
+      "type": "enumeration",
+      "enum": [
+        "online",
+        "offline"
+      ]
+    },
+    "password": {
+      "type": "string",
+      "private": true,
+      "required": true
+    },
+    "pin": {
+      "type": "string"
+    }
+  }
+}

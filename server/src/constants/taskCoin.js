@@ -1,0 +1,12 @@
+const CHECKIN_COIN = 10;
+const SHARE_APP_COIN = 10;
+const BIND_STEAM_COIN = 50;
+const INVITE_ONE_USER_COIN = 100;
+
+module.exports = {
+  CHECKIN_COIN,
+  SHARE_APP_COIN,
+  BIND_STEAM_COIN,
+  INVITE_ONE_USER_COIN,
+};
+

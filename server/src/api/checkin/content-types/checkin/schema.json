@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "checkins",
+  "info": {
+    "singularName": "checkin",
+    "pluralName": "checkins",
+    "displayName": "checkin",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "calendar": {
+      "type": "biginteger"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "checkins"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "steamj-taro",
+	"description": "",
+	"appid": "wx47ff98057dd42f7d",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"enhance": false,
+		"compileHotReLoad": false,
+		"postcss": false,
+		"preloadBackgroundData": false,
+		"minified": false,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": false,
+		"scopeDataCheck": false,
+		"useCompilerModule": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"nodeModules": true,
+		"uploadWithSourceMap": true,
+		"uglifyFileName": false,
+		"remoteDebugLogEnable": false,
+		"prefetch": false
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"libVersion": "2.26.0",
+	"srcMiniprogramRoot": "dist/",
+	"packOptions": {
+		"ignore": [],
+		"include": []
+	},
+	"editorSetting": {
+		"tabIndent": "insertSpaces",
+		"tabSize": 2
+	},
+	"qqappid": "1108100302",
+	"scripts": {},
+	"condition": {
+		"plugin": {
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"list": [
+				{
+					"id": -1,
+					"name": "兑换中心",
+					"pathName": "pages/exchangeCenter/index",
+					"query": "",
+					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "任务中心",
+					"pathName": "pages/taskCenter/index",
+					"query": "",
+					"scene": ""
+				}
+			],
+			"current": -1
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "servers",
+  "info": {
+    "singularName": "server",
+    "pluralName": "servers",
+    "displayName": "server",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "is_valid": {
+      "type": "boolean"
+    },
+    "address": {
+      "type": "string"
+    },
+    "online_user": {
+      "type": "integer"
+    },
+    "offline_user": {
+      "type": "integer"
+    }
+  }
+}

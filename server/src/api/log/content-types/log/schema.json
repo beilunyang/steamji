@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logs",
+  "info": {
+    "singularName": "log",
+    "pluralName": "logs",
+    "displayName": "log",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "logs"
+    },
+    "content": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "INFO",
+        "ERROR",
+        "WARN"
+      ]
+    },
+    "created_time": {
+      "type": "datetime"
+    },
+    "raw": {
+      "type": "text",
+      "unique": true
+    }
+  }
+}
